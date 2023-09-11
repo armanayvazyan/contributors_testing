@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Specify the number of contributors and commits per contributor
-num_contributors=10
+num_contributors=110
 commits_per_contributor=5
 
 # Loop through contributors
-for ((i = 1; i <= num_contributors; i++)); do
+for ((i = 70; i <= num_contributors; i++)); do
     contributor_name="Contributor$i"
     contributor_email="contributor$i@example.com"
 
