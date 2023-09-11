@@ -13,12 +13,9 @@ for ((i = 70; i <= num_contributors; i++)); do
     git config user.name "$contributor_name"
     git config user.email "$contributor_email"
 
-    # Perform commits for this contributor
-    for ((j = 1; j <= commits_per_contributor; j++)); do
         touch "contribution_$i_commit_$j.txt"
         git add "contribution_$i_commit_$j.txt"
         git commit -m "Commit $j by $contributor_name"
-    done
 done
 
 # Reset the Git config to your own name and email (or the desired default)
